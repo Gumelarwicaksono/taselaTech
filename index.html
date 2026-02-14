@@ -1,44 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Tasela Tech Solutions</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
-
-<body>
-    <header>
-        <h1>Welcome to Tasela Tech Solutions</h1>
-        <p>Your one-stop solution for tech needs!</p>
-        <a href="https://wa.me/6282122394638" class="cta-button">Contact Us on WhatsApp</a>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Tasela Tech Solutions</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#services" class="hover:underline">Services</a></li>
+                    <li><a href="#about" class="hover:underline">About Us</a></li>
+                    <li><a href="#contact" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
-    <section class="pricing">
-        <h2>Our Pricing Plans</h2>
-        <div class="card">
-            <h3>TOF Plan</h3>
-            <p>Details about TOF pricing...</p>
-        </div>
-        <div class="card">
-            <h3>MOF Plan</h3>
-            <p>Details about MOF pricing...</p>
-        </div>
-        <div class="card">
-            <h3>BOF Plan</h3>
-            <p>Details about BOF pricing...</p>
-        </div>
-    </section>
-    
-    <footer>
-        <h3>Payment Methods</h3>
-        <p>We accept:</p>
-        <ul>
-            <li>SeaBank</li>
-            <li>CIMB Niaga</li>
-        </ul>
+
+    <main class="container mx-auto p-6">
+        <section class="my-12 text-center">
+            <h2 class="text-4xl font-bold mb-4">Welcome to Tasela Tech Solutions</h2>
+            <p class="text-lg mb-6">Your one-stop solution for all tech needs. We specialize in providing top-notch services to power your business.</p>
+            <a href="#services" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Learn More</a>
+        </section>
+
+        <section id="services" class="my-12">
+            <h2 class="text-3xl font-bold mb-4">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 bg-white rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+                    <p>Building responsive and high-performing websites.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-2">App Development</h3>
+                    <p>Creating mobile applications that enhance user experience.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-2">Digital Marketing</h3>
+                    <p>Helping you reach the right audience through effective strategies.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="my-12">
+            <h2 class="text-3xl font-bold mb-4">About Us</h2>
+            <p>At Tasela Tech Solutions, we are dedicated to providing innovative technology solutions that meet the needs of our clients. Our team is committed to excellence and delivering results.</p>
+        </section>
+
+        <section id="contact" class="my-12">
+            <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+            <p>If you have any questions or would like to work with us, feel free to reach out!</p>
+            <form class="mt-4">
+                <input type="text" placeholder="Your Name" class="border p-2 w-full mb-4">
+                <input type="email" placeholder="Your Email" class="border p-2 w-full mb-4">
+                <textarea placeholder="Your Message" class="border p-2 w-full mb-4"></textarea>
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white p-6 text-center">
+        <p>&copy; 2026 Tasela Tech Solutions. All rights reserved.</p>
     </footer>
 </body>
-
 </html>
