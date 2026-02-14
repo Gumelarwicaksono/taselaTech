@@ -1,70 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <title>Tasela Tech Solutions</title>
+    <title>Tasela Tech Solutions - Jasa Pembuatan Website Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body class="bg-gray-100">
-    <header class="bg-blue-600 text-white p-6">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-3xl font-bold">Tasela Tech Solutions</h1>
-            <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="#" class="hover:underline">Home</a></li>
-                    <li><a href="#services" class="hover:underline">Services</a></li>
-                    <li><a href="#about" class="hover:underline">About Us</a></li>
-                    <li><a href="#contact" class="hover:underline">Contact</a></li>
-                </ul>
-            </nav>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-2xl font-bold text-indigo-600">Tasela<span class="text-slate-800">Tech</span></div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#home" class="hover:text-indigo-600">Beranda</a>
+                    <a href="#services" class="hover:text-indigo-600">Layanan</a>
+                    <a href="#pricing" class="hover:text-indigo-600">Harga</a>
+                    <a href="#payment" class="hover:text-indigo-600">Pembayaran</a>
+                </div>
+                <a href="https://wa.me/6282122394638" class="bg-indigo-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-indigo-700 transition">Konsultasi Gratis</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="py-20 bg-gradient-to-br from-indigo-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6">
+                Transformasi Digital Bisnis Anda Bersama <span class="text-indigo-600">Tasela Tech Solutions</span>
+            </h1>
+            <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto">
+                Kami membangun website yang cepat, aman, dan berorientasi pada hasil untuk membantu bisnis Anda tumbuh lebih pesat di era digital.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#pricing" class="bg-indigo-600 text-white px-8 py-4 rounded-lg font-bold shadow-lg hover:bg-indigo-700">Lihat Paket Harga</a>
+                <a href="https://wa.me/6282122394638" class="bg-white border-2 border-slate-200 px-8 py-4 rounded-lg font-bold hover:bg-slate-50 transition">Hubungi Kami</a>
+            </div>
         </div>
     </header>
 
-    <main class="container mx-auto p-6">
-        <section class="my-12 text-center">
-            <h2 class="text-4xl font-bold mb-4">Welcome to Tasela Tech Solutions</h2>
-            <p class="text-lg mb-6">Your one-stop solution for all tech needs. We specialize in providing top-notch services to power your business.</p>
-            <a href="#services" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Learn More</a>
-        </section>
+    <section id="pricing" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Pilih Paket Website Anda</h2>
+            <p class="text-slate-600">Solusi tepat untuk setiap skala kebutuhan bisnis.</p>
+        </div>
 
-        <section id="services" class="my-12">
-            <h2 class="text-3xl font-bold mb-4">Our Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="p-6 bg-white rounded-lg shadow">
-                    <h3 class="text-xl font-semibold mb-2">Web Development</h3>
-                    <p>Building responsive and high-performing websites.</p>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition">
+                <h3 class="text-xl font-bold mb-2">Starter</h3>
+                <div class="text-3xl font-bold text-indigo-600 mb-6">Rp 500rb</div>
+                <ul class="space-y-4 mb-8 text-slate-600">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Landing Page Tunggal</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Domain .biz.id / .my.id</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> SSL Gratis (HTTPS)</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Revisi 2x</li>
+                </ul>
+                <a href="https://wa.me/6282122394638?text=Halo%20Tasela%20Tech,%20saya%20tertarik%20paket%20Starter" class="block text-center border-2 border-indigo-600 text-indigo-600 py-3 rounded-lg font-bold hover:bg-indigo-600 hover:text-white transition">Pilih Paket</a>
+            </div>
+
+            <div class="bg-indigo-600 p-8 rounded-2xl shadow-2xl transform scale-105 text-white">
+                <span class="bg-yellow-400 text-indigo-900 text-xs font-bold px-3 py-1 rounded-full uppercase">Paling Populer</span>
+                <h3 class="text-xl font-bold mt-4 mb-2">Medium</h3>
+                <div class="text-3xl font-bold mb-6">Rp 1.5jt</div>
+                <ul class="space-y-4 mb-8 opacity-90">
+                    <li><i class="fas fa-check text-yellow-400 mr-2"></i> Hingga 5 Halaman</li>
+                    <li><i class="fas fa-check text-yellow-400 mr-2"></i> Domain .com / .id</li>
+                    <li><i class="fas fa-check text-yellow-400 mr-2"></i> Responsive Design</li>
+                    <li><i class="fas fa-check text-yellow-400 mr-2"></i> Optimasi SEO Dasar</li>
+                    <li><i class="fas fa-check text-yellow-400 mr-2"></i> Revisi 5x</li>
+                </ul>
+                <a href="https://wa.me/6282122394638?text=Halo%20Tasela%20Tech,%20saya%20tertarik%20paket%20Medium" class="block text-center bg-white text-indigo-600 py-3 rounded-lg font-bold hover:bg-slate-100 transition">Pilih Paket</a>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition">
+                <h3 class="text-xl font-bold mb-2">Advanced</h3>
+                <div class="text-3xl font-bold text-indigo-600 mb-6">Rp 3.5jt+</div>
+                <ul class="space-y-4 mb-8 text-slate-600">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Web Custom / E-commerce</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Sistem Membership</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Payment Gateway</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Maintenance 3 Bulan</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Prioritas Support</li>
+                </ul>
+                <a href="https://wa.me/6282122394638?text=Halo%20Tasela%20Tech,%20saya%20ingin%20konsultasi%20paket%20Advanced" class="block text-center border-2 border-indigo-600 text-indigo-600 py-3 rounded-lg font-bold hover:bg-indigo-600 hover:text-white transition">Pilih Paket</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="payment" class="py-20 bg-slate-100">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-10">Metode Pembayaran Aman</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm flex items-center justify-center space-x-4 border border-slate-200">
+                    <div class="text-left font-semibold">
+                        <p class="text-blue-600 text-lg uppercase">SeaBank</p>
+                        <p class="text-slate-500 text-sm">Transfer Bank Terverifikasi</p>
+                    </div>
                 </div>
-                <div class="p-6 bg-white rounded-lg shadow">
-                    <h3 class="text-xl font-semibold mb-2">App Development</h3>
-                    <p>Creating mobile applications that enhance user experience.</p>
-                </div>
-                <div class="p-6 bg-white rounded-lg shadow">
-                    <h3 class="text-xl font-semibold mb-2">Digital Marketing</h3>
-                    <p>Helping you reach the right audience through effective strategies.</p>
+                <div class="bg-white p-6 rounded-xl shadow-sm flex items-center justify-center space-x-4 border border-slate-200">
+                    <div class="text-left font-semibold">
+                        <p class="text-red-600 text-lg uppercase">CIMB Niaga</p>
+                        <p class="text-slate-500 text-sm">Transfer Bank Terverifikasi</p>
+                    </div>
                 </div>
             </div>
-        </section>
+            <p class="mt-8 text-slate-500 text-sm italic">*Konfirmasikan pembayaran melalui WhatsApp setelah transaksi berhasil.</p>
+        </div>
+    </section>
 
-        <section id="about" class="my-12">
-            <h2 class="text-3xl font-bold mb-4">About Us</h2>
-            <p>At Tasela Tech Solutions, we are dedicated to providing innovative technology solutions that meet the needs of our clients. Our team is committed to excellence and delivering results.</p>
-        </section>
-
-        <section id="contact" class="my-12">
-            <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
-            <p>If you have any questions or would like to work with us, feel free to reach out!</p>
-            <form class="mt-4">
-                <input type="text" placeholder="Your Name" class="border p-2 w-full mb-4">
-                <input type="email" placeholder="Your Email" class="border p-2 w-full mb-4">
-                <textarea placeholder="Your Message" class="border p-2 w-full mb-4"></textarea>
-                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <footer class="bg-blue-600 text-white p-6 text-center">
-        <p>&copy; 2026 Tasela Tech Solutions. All rights reserved.</p>
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-xl font-bold mb-4">Tasela Tech Solutions</h4>
+                <p class="text-slate-400">Penyedia jasa pembuatan website terpercaya untuk segala jenis bisnis Anda.</p>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-4">Kontak</h4>
+                <p class="text-slate-400"><i class="fab fa-whatsapp mr-2"></i> +62 821 2239 4638</p>
+                <p class="text-slate-400"><i class="fas fa-globe mr-2"></i> taselatech.biz.id</p>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-4">Ikuti Kami</h4>
+                <div class="flex space-x-4 text-2xl">
+                    <a href="#" class="hover:text-indigo-400"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-indigo-400"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-12 pt-8 border-t border-slate-800 text-slate-500 text-sm">
+            &copy; 2026 Tasela Tech Solutions. All Rights Reserved.
+        </div>
     </footer>
+
 </body>
 </html>
